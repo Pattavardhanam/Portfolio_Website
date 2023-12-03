@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.name }} - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ data.name }}</h1>
+        <p>{{ data.bio }}</p>
+
+        <h2>Interests</h2>
+        <ul>
+            {% for interest in data.interests %}
+                <li>{{ interest }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Experience</h2>
+        <ul>
+            {% for experience in data.experience %}
+                <li>
+                    <h3>{{ experience.title }}</h3>
+                    <p>{{ experience.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <h2>Projects</h2>
+        <ul>
+            {% for project in data.projects %}
+                <li>
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <h2>Social Media</h2>
+        <div class="social-links">
+            {% for platform, link in data.social_media.items() %}
+                <a href="{{ link }}" target="_blank">{{ platform }}</a>
+            {% endfor %}
+    </div>
+</body>
+</html>
