@@ -15,13 +15,13 @@ portfolio_data = {
     'projects': [
         {'title': 'Smart City Project',
             'description': 'Designed a smart city in the Thar desert using Minecraft:Education Editition. Presented the idea at IIHS, Bengaluru'},
-        {'title': 'Imagine Cup Junior 2020',
+        {'title': 'Microsoft Imagine Cup Junior 2020',
             'description': 'Designed a pair of glasses which does multiple tasks and helps the blind person.'},
         {'title': 'KAGADA - 2023 by IEEE UVCE',
             'description':'Designed a prototype that converts waste heat from railway tracks to electricity. Won 1st place'},
     ],
     'social_media': {
-        'Github': 'https://github.com/Pattavardhanam',
+        'GitHub': 'https://github.com/Pattavardhanam',
         'Instagram': 'https://www.instagram.com/pattavardhanam17/',
         'LinkedIn':'https://www.linkedin.com/in/aditya-pattavardhanam/',
         'Twitter':'https://twitter.com/pattavardhanam'
